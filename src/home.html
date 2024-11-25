@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: retro;
+        src: url("font/Retro Gaming.ttf");
+      }
+
+      body {
+        background-image: url(imgs/bg3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: retro;
+      }
+      .title {
+        -webkit-text-stroke: 1px #353540;
+      }
+      .content {
+        width: 28rem;
+      }
+      .characters {
+        width: 35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="imgs/title.png"
+      alt="title"
+      class="h-16 mx-auto mt-8 trasition hover:scale-105 duration-300"
+    />
+    <img
+      src="imgs/subtitle.png"
+      alt="subtitle"
+      class="h-10 mx-auto mt-1 trasition hover:scale-105 duration-300"
+    />
+    <div class="grid grid-cols-2 content mx-auto mt-10 *:my-10 *:rounded-md">
+      <div>
+        <img
+          src="imgs/characters/king.gif"
+          alt=""
+          class="-mt-8 mx-auto bg-white rounded-md hover:scale-105 transition-all hover:border-2 hover:border-black1"
+        />
+        <p class="text-center mt-3">The King</p>
+      </div>
+      <div>
+        <img
+          src="imgs/characters/knight.gif"
+          alt=""
+          class="-mt-8 mx-auto bg-white rounded-md hover:scale-105 transition-all hover:border-2 hover:border-black1"
+        />
+        <p class="text-center mt-3">The Knight</p>
+      </div>
+      <div>
+        <img
+          src="imgs/characters/sheriff.gif"
+          alt=""
+          class="-mt-8 mx-auto bg-white rounded-md hover:scale-105 transition-all hover:border-2 hover:border-black1"
+        />
+        <p class="text-center mt-3">The Sheriff</p>
+      </div>
+      <div>
+        <img
+          src="imgs/characters/wizard.gif"
+          alt=""
+          class="-mt-8 mx-auto bg-white rounded-md hover:scale-105 transition-all hover:border-2 hover:border-black1"
+        />
+        <p class="text-center mt-3">The Wizard</p>
+      </div>
+    </div>
+    <div class="characters mx-auto bg-brown2 p-3 rounded-md text-sm h-0"></div>
+    <div class="mx-auto content">
+        <script>
+          function next(){
+            window.location.href = "index.html"
+          }
+        </script>
+        <button onclick="next()" class="bg-blue1 text-white content mx-auto p-3 border-2 hover:border-blue3 hover:bg-blue2 hover:scale-105 transition-all delay-100 border-blue2 rounded-md mt-5">Find Out My Character</button>    
+    </div>
+  </body>
+</html>

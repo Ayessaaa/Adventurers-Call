@@ -10,6 +10,22 @@
         src: url("font/Retro Gaming.ttf");
       }
 
+      .gif {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
       body {
         background-image: url(imgs/bg3.png);
         background-repeat: no-repeat;
@@ -43,8 +59,8 @@
       class="bg-brown2 youare mx-auto mt-16 items-center p-5 rounded-md border-4 border-black1 transition-all hover:scale-105"
     >
       <p class="text-center">You are the...</p>
-      <img src="imgs/characters/king.gif" alt="king" class="mx-auto -mt-5" />
-      <img src="imgs/characters/king.png" alt="king" class="h-10 mx-auto" />
+      <img src="imgs/characters/king.gif" alt="king" class="mx-auto -mt-5 gif" />
+      <img src="imgs/characters/king.png" alt="king" class="h-10 mx-auto gif" />
     </div>
 
     <div

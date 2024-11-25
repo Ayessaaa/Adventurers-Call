@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href=".././output.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: retro;
+        src: url("../font/Retro Gaming.ttf");
+      }
+
+      body {
+        background-image: url(../imgs/bg3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: retro;
+      }
+      .title {
+        -webkit-text-stroke: 1px #353540;
+      }
+      .content {
+        width: 35rem;
+      }
+      .characters {
+        width: 35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="../imgs/title.png"
+      alt="title"
+      class="h-16 mx-auto mt-8 trasition hover:scale-105 duration-300"
+    />
+    <img
+      src="../imgs/subtitle.png"
+      alt="subtitle"
+      class="h-10 mx-auto mt-1 trasition hover:scale-105 duration-300"
+    />
+    <div
+      class="grid grid-cols-4 characters mx-auto place-items-center text-center text-black1 mt-5"
+    >
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >KING<img src="../imgs/characters/king.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >KNIGHT<img src="../imgs/characters/knight.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >SHERIFF<img
+            src="../imgs/characters/sheriff.gif"
+            alt=""
+            class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >WIZARD<img src="../imgs/characters/wizard.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+    </div>
+
+    <div
+      class="tracking-tight shadow-sm drop-shadow-sm bg-brown2 content mx-auto mt-20 p-5 rounded-md text-center text-white"
+    >
+      <p>One last question to determine your mighty character</p>
+      <p class="text-black1 text-sm mt-3">
+        Do you prioritize creating innovative solutions or ensuring fairness and structure in a situation?
+      </p>
+      <script>
+        function wizard() {
+          window.location.href = "../wizard.html";
+        }
+        function sheriff() {
+          window.location.href = "../sheriff.html";
+        }
+      </script>
+      <button
+        onclick="wizard()"
+        class="bg-blue1 text-white rounded-md mx-auto p-2 w-full m-3 shadow-sm border-2 mt-8 border-blue2 drop-shadow-sm hover:scale-105 transition-all hover:bg-blue2 hover:border-blue3 delay-100"
+      >
+      Creating innovative solutions
+      </button>
+      <button
+        onclick="sheriff()"
+        class="bg-blue1 text-white rounded-md mx-auto p-2 w-full mb-1 shadow-sm border-2 border-blue2 drop-shadow-sm hover:scale-105 transition-all hover:bg-blue2 hover:border-blue3 delay-100"
+      >
+      Ensuring fairness and structure
+      </button>
+    </div>
+  </body>
+</html>

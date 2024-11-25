@@ -10,6 +10,22 @@
         src: url("font/Retro Gaming.ttf");
       }
 
+      .gif {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
       body {
         background-image: url(imgs/bg3.png);
         background-repeat: no-repeat;
@@ -46,12 +62,12 @@
       <img
         src="imgs/characters/wizard.gif"
         alt="wizard"
-        class="mx-auto -mt-5"
+        class="mx-auto -mt-5 gif"
       />
       <img
-        src="imgs/characters/wizardd.png"
+        src="imgs/characters/wizardd.png "
         alt="wizard"
-        class="h-10 mx-auto"
+        class="h-10 mx-auto gif"
       />
     </div>
 
@@ -84,7 +100,8 @@
     >
       <p class="text-center tracking-tight text-sm">
         Jobs for Wizards:<br />
-        Scientist, strategist, inventor, teacher, data analyst, software developer.
+        Scientist, strategist, inventor, teacher, data analyst, software
+        developer.
       </p>
     </div>
   </body>
