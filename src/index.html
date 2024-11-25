@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: retro;
+        src: url("font/Retro Gaming.ttf");
+      }
+
+      body {
+        background-image: url(imgs/bg3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: retro;
+      }
+      .title {
+        -webkit-text-stroke: 1px #353540;
+      }
+      .content {
+        width: 35rem;
+      }
+      .characters {
+        width: 35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="imgs/title.png"
+      alt="title"
+      class="h-16 mx-auto mt-8 trasition hover:scale-105 duration-300"
+    />
+    <img
+      src="imgs/subtitle.png"
+      alt="subtitle"
+      class="h-10 mx-auto mt-2 trasition hover:scale-105 duration-300"
+    />
+    <div
+      class="grid grid-cols-4 characters mx-auto place-items-center text-center text-black1 mt-5"
+    >
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >KING<img src="imgs/characters/king.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >KNIGHT<img src="imgs/characters/knight.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >SHERIFF<img src="imgs/characters/sheriff.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+      <div
+        class="hover:bg-white hover:scale-105 transition-all pt-2 rounded-md"
+      >
+        <span class="z-10 mt-2"
+          >WIZARD<img src="imgs/characters/wizard.gif" alt="" class="-mt-8"
+        /></span>
+      </div>
+    </div>
+    <div
+      class="content mx-auto mt-10 rounded-md bg-brown2 shadow-md drop-shadow-md border-brown1 py-5 sm:p-5 mb-32"
+    >
+      <p class="tracking-tight text-center mb-2 text-white text-md">
+        Questions
+      </p>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-2 sm:text-sm text-xs"
+      >
+        I enjoy solving problems using knowledge, strategy, or creativity.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd1"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di1"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne1"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag1"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa1"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I feel responsible for inspiring and guiding others to achieve a common
+        goal.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd2"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di2"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne2"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag2"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa2"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I thrive in fast-paced situations that require quick decisions and
+        bravery.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd3"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di3"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne3"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag3"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa3"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I value fairness and enjoy creating order and upholding rules.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd4"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di4"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne4"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag4"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa4"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I often think ahead and develop long-term plans to overcome challenges.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd5"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di5"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne5"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag5"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa5"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I find satisfaction in protecting and caring for those I’m responsible
+        for.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd6"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di6"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne6"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag6"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa6"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I feel fulfilled when standing up for what is right, even against the
+        odds.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd7"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di7"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne7"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag7"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa7"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I am good at resolving disputes and ensuring peace within a group.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd8"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di8"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne8"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag8"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa8"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I love experimenting with new ideas and approaches to solve tough
+        problems.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd9"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di9"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne9"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag9"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa9"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I enjoy stepping into leadership roles during challenging times.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd10"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di10"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne10"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag10"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa10"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I feel a sense of pride when defending others and fighting for justice.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd11"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di11"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne11"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag11"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa11"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      <p
+        class="text-black1 tracking-tight text-center mb-2 mt-7 sm:text-sm text-xs"
+      >
+        I believe strongly in maintaining balance and ensuring fairness in my
+        community.
+      </p>
+      <div
+        class="inline-flex rounded-md shadow-sm *:sm:text-sm *:text-xs mx-auto"
+        role="group"
+      >
+        <button
+          id="sd12"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm rounded-s-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Disagree
+        </button>
+        <button
+          id="di12"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Disagree
+        </button>
+        <button
+          id="ne12"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Neutral
+        </button>
+        <button
+          id="ag12"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Agree
+        </button>
+        <button
+          id="sa12"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-gray1 bg-brown3 shadow-sm drop-shadow-sm border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue1 focus:z-10 focus:ring-2 focus:ring-blue1 focus:text-blue1 transition-all hover:scale-105"
+        >
+          Strongly<br />Agree
+        </button>
+      </div>
+      
+      <button id="button"
+        class="bg-blue1 text-white rounded-md mx-auto p-2 w-full m-3 shadow-sm border-2 mt-10 border-blue2 drop-shadow-sm hover:scale-105 transition-all hover:bg-blue2 hover:border-blue3 delay-100"
+      >
+        What's my Character?
+      </button>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
