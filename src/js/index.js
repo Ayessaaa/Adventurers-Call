@@ -61,41 +61,43 @@ window.onload = function () {
     console.log(wizardScore, kingScore, knightScore, sheriffScore);
 
     const charactersScore = [wizardScore, kingScore, knightScore, sheriffScore];
-    const maxScore = Math.max.apply(null, charactersScore)
-    var maxCount = 0
+    const maxScore = Math.max.apply(null, charactersScore);
+    var maxCount = 0;
 
-    charactersScore.forEach(score => {
-      if (score === maxScore){
-        maxCount += 1
+    charactersScore.forEach((score) => {
+      if (score === maxScore) {
+        maxCount += 1;
       }
     });
-  
-    if (maxCount === 1){
-      if(maxScore === wizardScore){
-      window.location.href = "wizard.html";
-    } else if (maxScore === kingScore){
-      window.location.href = "king.html";
-    } else if (maxScore === sheriffScore){
-      window.location.href = "sheriff.html"
-    } else {
-      window.location.href = "knight.html"
-    }
-    } else if (wizardScore === kingScore === maxCount){
-      window.location.href = "tiebreaker/w_kg.html"
-    } else if (wizardScore === knightScore === maxCount){
-      window.location.href = "tiebreaker/w_kt.html"
-    } else if (wizardScore === sheriffScore === maxCount){
-      window.location.href = "tiebreaker/w_s.html"
-    } else if (kingScore === knightScore === maxCount){
-      window.location.href = "tiebreaker/kg_kt.html"
-    } else if (kingScore === sheriffScore === maxCount){
-      window.location.href = "tiebreaker/kg_s.html"
-    } else {
-      // knight and sheriff
-      window.location.href = "tiebreaker/kt_s.html"
-    }
-    
 
+    if (maxScore === 0) {
+      alert("Your character is UNKNOWN \npls answer the questions :D");
+    } else {
+      if (maxCount === 1) {
+        if (maxScore === wizardScore) {
+          window.location.href = "wizard.html";
+        } else if (maxScore === kingScore) {
+          window.location.href = "king.html";
+        } else if (maxScore === sheriffScore) {
+          window.location.href = "sheriff.html";
+        } else {
+          window.location.href = "knight.html";
+        }
+      } else if ((wizardScore === kingScore) === maxCount) {
+        window.location.href = "tiebreaker/w_kg.html";
+      } else if ((wizardScore === knightScore) === maxCount) {
+        window.location.href = "tiebreaker/w_kt.html";
+      } else if ((wizardScore === sheriffScore) === maxCount) {
+        window.location.href = "tiebreaker/w_s.html";
+      } else if ((kingScore === knightScore) === maxCount) {
+        window.location.href = "tiebreaker/kg_kt.html";
+      } else if ((kingScore === sheriffScore) === maxCount) {
+        window.location.href = "tiebreaker/kg_s.html";
+      } else {
+        // knight and sheriff
+        window.location.href = "tiebreaker/kt_s.html";
+      }
+    }
   }
 
   function scoreCalculator(answer) {
@@ -108,8 +110,10 @@ window.onload = function () {
       return 3;
     } else if (value === "ag") {
       return 4;
-    } else {
+    } else if (value === "sa"){
       return 5;
+    } else {
+      return 0;
     }
   }
 };
